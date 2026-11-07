@@ -8,7 +8,7 @@ Outlook, Teams and calendar activity for a date range, then **verifies every num
 own git history and your CRM before it ever reaches a timesheet** — so submitting hours takes
 minutes of review, not an evening of digging through old emails.
 
-## 🔎 Why trust it
+## 🔍 Verified, not trusted
 
 Copilot is never asked to do arithmetic. It only mines Microsoft 365 and prints raw evidence;
 every total, formatting rule and reconciliation check is re-derived locally and cross-checked
