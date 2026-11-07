@@ -1,0 +1,19 @@
+{
+  "name": "m365-timesheet",
+  "version": "1.0.0",
+  "description": "Evidence-based timesheet generation from M365 Copilot, local case folders and a Dataverse CRM",
+  "main": "scripts/run_timesheet.js",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "timesheet": "node scripts/run_timesheet.js",
+    "prompt": "node scripts/build_prompt.js",
+    "evidence": "node scripts/collect_evidence.js",
+    "cases": "node scripts/list_cases.js",
+    "parse": "node scripts/parse.js",
+    "test": "node --test \"tests/**/*.test.js\""
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "inquirer": "^8.2.6"
+  }
+}
