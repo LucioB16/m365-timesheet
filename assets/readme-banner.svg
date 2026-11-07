@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">M365 Timesheet</title>
+  <desc id="desc">Evidence from Outlook, Teams, Calendar, Dataverse CRM, and local Git is reconciled into a verified timesheet.</desc>
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a367c"/><stop offset="1" stop-color="#072358"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0878fa"/><stop offset="1" stop-color="#0560dc"/></linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#80eac5"/><stop offset="1" stop-color="#35cf98"/></linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e9f2fd"/><stop offset="1" stop-color="#e1ecf9"/></linearGradient>
+  </defs>
+  <rect width="1600" height="520" fill="#f9fbfe"/>
+  <path d="M1310 0h290v95Q1562 97 1536 83Z" fill="#e0edff"/>
+  <path d="M0 365Q135 384 300 520H0Z" fill="#e0edff"/>
+  <path d="M1350 520Q1487 435 1600 431v89Z" fill="#daf8ed"/>
+  <!-- Signature mark: three evidence streams surrounding a validated sheet. -->
+  <g transform="translate(55 117)">
+    <path d="M43 112L0 142Q-11 152 0 164L165 292Q178 302 191 290L213 270L82 170V70Z" fill="url(#blue)"/>
+    <path d="M220 154L303 195Q315 202 301 217L202 304Q187 318 169 302L132 267Z" fill="url(#mint)"/>
+    <path d="M66 0H251Q283 0 283 33V144Q283 162 267 177L153 269L54 194Q43 186 43 170V26Q43 0 66 0Z" fill="url(#top)"/>
+    <path d="M82 49Q82 31 100 31H145V98H82Z M163 31H226Q242 31 242 49V98H163Z M82 116H145V180H82Z M163 116H242V161L220 180H163Z" fill="#fff"/>
+    <path d="M118 227L159 264L266 173L274 199L162 298L109 250Z" fill="#fff"/>
+  </g>
+  <!-- Brand lockup. -->
+  <g font-family="Segoe UI, Inter, Arial, sans-serif">
+    <text x="466" y="111" font-size="73" letter-spacing="-2.4" font-weight="750" fill="#092b65">M365</text>
+    <text x="684" y="111" font-size="73" letter-spacing="-2.4" font-weight="750" fill="#0872ef">Timesheet</text>
+    <text x="468" y="158" font-size="26" font-weight="500" fill="#526982">Evidence-backed timesheets from M365, Dataverse, and Git</text>
+  </g>
+  <!-- Three source modules. -->
+  <g font-family="Segoe UI, Inter, Arial, sans-serif">
+    <rect x="475" y="205" width="570" height="70" rx="35" fill="url(#tile)"/>
+    <rect x="475" y="294" width="570" height="70" rx="35" fill="url(#tile)"/>
+    <rect x="475" y="383" width="570" height="70" rx="35" fill="url(#tile)"/>
+    <g transform="translate(506 222)">
+      <rect width="40" height="37" rx="7" fill="#0876e8"/>
+      <path d="M7 12L20 22L33 12M7 12L7 30H33V12" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <rect x="49" y="0" width="40" height="37" rx="7" fill="#6957ca"/>
+      <circle cx="61" cy="13" r="5" fill="white"/><circle cx="76" cy="13" r="5" fill="white"/>
+      <path d="M52 29Q53 19 63 19Q72 19 72 29M67 29Q69 20 80 20" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <rect x="98" y="0" width="40" height="37" rx="7" fill="#00a7dd"/>
+      <path d="M100 11H136M108 2V36M120 2V36M100 23H136" stroke="#fff" stroke-width="3" opacity=".85"/>
+    </g>
+    <text x="664" y="250" font-size="26" font-weight="650" fill="#0b2b5e">Outlook / Teams / Calendar</text>
+    <g transform="translate(516 313)" fill="none" stroke="#008c64" stroke-width="10"><circle cx="17" cy="16" r="14"/><circle cx="40" cy="16" r="14" stroke="#19af7b"/></g>
+    <text x="619" y="340" font-size="28" font-weight="650" fill="#0b2b5e">Dataverse CRM</text>
+    <g transform="translate(531 399)" stroke="#f05a2b" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M0 14L26 14L26 38M26 14L47 14"/>
+      <circle cx="0" cy="14" r="6" fill="#f05a2b"/><circle cx="26" cy="38" r="6" fill="#f05a2b"/><circle cx="47" cy="14" r="6" fill="#f05a2b"/>
+    </g>
+    <text x="619" y="429" font-size="28" font-weight="650" fill="#0b2b5e">Local Git</text>
+  </g>
+  <!-- Reconciliation paths and arrow. -->
+  <g stroke="#9bacbc" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M1047 240H1072Q1122 240 1122 329H1183"/>
+    <path d="M1047 329H1183"/>
+    <path d="M1047 418H1072Q1122 418 1122 329"/>
+    <path d="M1171 317L1186 329L1171 341" stroke-linejoin="round"/>
+  </g>
+  <!-- Final output. -->
+  <rect x="1197" y="285" width="354" height="128" rx="27" fill="#0a3071"/>
+  <rect x="1221" y="314" width="86" height="71" rx="7" fill="#fff"/>
+  <path d="M1233 331H1296M1233 346H1296M1233 361H1286M1255 331V374" stroke="#0a3071" stroke-width="5"/>
+  <circle cx="1303" cy="372" r="25" fill="#06b67d" stroke="#fff" stroke-width="5"/>
+  <path d="M1291 372L1300 381L1317 362" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1347 315V386" stroke="#7893b7" stroke-width="2"/>
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="30" font-weight="750" fill="#fff">
+    <text x="1372" y="340">Verified</text><text x="1372" y="377">Timesheet</text>
+  </g>
+</svg>

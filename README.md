@@ -1,4 +1,6 @@
-# M365 Timesheet Skill
+<p align="center">
+  <img src="assets/readme-banner.svg" alt="M365 Timesheet: Microsoft 365, Dataverse CRM and local Git evidence converge into a verified timesheet" width="100%" />
+</p>
 
 [![Agent agnostic](https://img.shields.io/badge/agent-agnostic-9cf)](https://github.com/LucioB16/m365-timesheet)
 
