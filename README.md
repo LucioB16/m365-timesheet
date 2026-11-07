@@ -1,4 +1,10 @@
-# M365 Timesheet Skill
+<div align="center">
+  <img src="assets/logo.png" alt="M365 Timesheet — verified timesheet logo" width="160" />
+
+  <h1>M365 Timesheet Skill</h1>
+
+  <p>Evidence-backed timesheets from Microsoft 365, Dataverse, and local Git history.</p>
+</div>
 
 [![Agent agnostic](https://img.shields.io/badge/agent-agnostic-9cf)](https://github.com/LucioB16/m365-timesheet)
 
