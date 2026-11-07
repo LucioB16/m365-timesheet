@@ -183,6 +183,23 @@ necessary but not sufficient. Before telling the user the timesheet is ready:
    row: date, client, hours, description) in the chat reply — not only the per-client weekly
    roll-up. The roll-up is a good addition on top of that table, not a replacement for it.
 
+## Submission-ready copy-paste format
+
+After every day is confirmed, the user may still have to retype each row by hand into a
+separate corporate timesheet system that does not take the CSV directly. For that workflow,
+offer (in chat, once the data is final) this format instead of only the markdown table:
+
+- Group rows under a human day header, e.g. "Monday 11-02".
+- For each row, a one-line label: `- <Client> (<Hours>h, <N>c):` where `<N>` is the exact
+  character count of the string that follows, not of the description alone when the row has
+  ticket IDs.
+- Immediately below, the exact text to paste in its own fenced code block, so the chat UI's
+  per-block copy button does the work. This is the same string the CSV's Description column
+  holds: ticket IDs are never dropped, and multi-case rows keep the
+  `CAS-123: ...; CAS-456: ...` format.
+- The character count is a convenience readout of the 255-char rule the validator already
+  enforces, not a separate rule; recompute it from the actual row data, never by hand.
+
 ## What the CRM contributes
 
 The case list alone only proves a case exists. Two further sources date the work:
