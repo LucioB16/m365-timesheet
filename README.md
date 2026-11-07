@@ -1,12 +1,11 @@
 # M365 Timesheet Skill
 
-[![Codex](https://img.shields.io/badge/Codex-compatible-blue)](https://github.com/LucioB16/m365-timesheet)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-orange)](https://github.com/LucioB16/m365-timesheet)
+[![Agent agnostic](https://img.shields.io/badge/agent-agnostic-9cf)](https://github.com/LucioB16/m365-timesheet)
 
 Stop reconstructing your week from memory. This skill asks Microsoft 365 Copilot to mine your
 Outlook, Teams and calendar activity for a date range, then **verifies every number against your
-own git history and your CRM before it ever reaches a timesheet** — so submitting hours takes
-minutes of review, not an evening of digging through old emails.
+own git history and your CRM before it ever reaches a timesheet.** Submitting hours takes minutes
+of review, not an evening of digging through old emails.
 
 ## 🔍 Verified, not trusted
 
@@ -20,8 +19,9 @@ from this project's own test data:
 (19 commit(s)) on 2026-11-06, but the timesheet has no entry for it.
 ```
 
-That is the point of the whole project: a day's worth of real, committed work that the model's
-evidence alone would have missed, caught automatically before you ever hit submit.
+Nineteen real commits from that day never showed up in the Microsoft 365 evidence, because
+Copilot only sees Outlook, Teams and the calendar. The local git scan catches them anyway,
+before the timesheet goes out.
 
 ## 🧩 How it works
 
@@ -41,13 +41,13 @@ expands with M365 discovery for meetings, emails, chats and work that isn't tied
 
 ## 🚀 Features
 
-- **CRM-first discovery**: starts from your real Dataverse case list — including portal comments
+- **CRM-first discovery**: starts from your real Dataverse case list, including portal comments
   and field-audit status history, which reads like a dated diary of what you actually did.
 - **Local verification, always**: hours, 0.25-hour rounding, daily quotas, description length and
   every roll-up are re-derived by local code, never trusted from the model's own math.
 - **Three-way reconciliation**: the drafted timesheet, your local git/file history and the CRM
   are cross-checked against each other, surfacing missed work, newly discovered ticket IDs and
-  client mismatches *before* submission — not after.
+  client mismatches before submission.
 - **Worktree- and alias-aware**: a git linked worktree or an old folder left aliasing a renamed
   case is detected and merged into the right case, so the same commits are never double-counted.
 - **Agent-agnostic**: works the same way whether you run it from Codex, Claude Code or any other
@@ -107,10 +107,10 @@ The date range is never stored in config; it is passed per run.
 
 ## 📤 Outputs
 
-- `output/timesheet-<start>_<end>.csv` — the submittable CSV
-- `output/timesheet-<start>_<end>--YYYY-MM.csv` — per month when the range crosses a boundary
-- `output/timesheet-<start>_<end>.md` — full report, sections A) through F)
-- `logs/latest_prompt.md`, `logs/latest_response.md` — kept for re-parsing
+- `output/timesheet-<start>_<end>.csv`: the submittable CSV
+- `output/timesheet-<start>_<end>--YYYY-MM.csv`: per month when the range crosses a boundary
+- `output/timesheet-<start>_<end>.md`: full report, sections A) through F)
+- `logs/latest_prompt.md`, `logs/latest_response.md`: kept for re-parsing
 
 ## 🧯 Exit codes
 
@@ -126,8 +126,8 @@ reconciliation findings · `3` run failure.
   and then revalidated; deterministic compaction remains as a final safety fallback.
 - If Opus is unavailable (weekly limit or model menu failure), the runner automatically retries
   once without forcing model selection (uses the current/default model).
-- Blocking reconciliation findings are resolved interactively, one at a time, with the user —
-  and the timesheet is walked day-by-day for final confirmation before it's done. See
+- Blocking reconciliation findings are resolved interactively, one at a time, with the user, and
+  the timesheet is walked day-by-day for final confirmation before it's done. See
   "Resolving blocking findings interactively" and "Final review before declaring the timesheet
   done" in `SKILL.md`.
 - See `SKILL.md` for the output contract, the reconciliation rules, the two-identity CRM note
